@@ -1,0 +1,6 @@
+name: LegacyProjectiles
+version: '1.0'
+main: net.jadedmc.legacyprojectiles.LegacyProjectilesPlugin
+api-version: 1.13
+author: JadedMC
+website: https://www.jadedmc.net
