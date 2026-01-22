@@ -25,13 +25,16 @@
 package net.jadedmc.legacyprojectiles;
 
 import net.jadedmc.legacyprojectiles.listeners.ProjectileLaunchListener;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class LegacyProjectilesPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        int pluginId = 28978;
+        Metrics metrics = new Metrics(this, pluginId);
+
         getServer().getPluginManager().registerEvents(new ProjectileLaunchListener(), this);
     }
 }
